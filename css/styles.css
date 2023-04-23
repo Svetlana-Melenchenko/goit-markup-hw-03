@@ -233,6 +233,9 @@ ul {
 	display: flex;
 	gap: 24px;
 }
+.about-list-item{
+	width: calc((100% - 72px) / 4);
+}
 .about-list-title {
 	margin-bottom: 8px;
 }
@@ -248,6 +251,9 @@ ul {
 	display: flex;
 	gap: 24px;
 	background-color: var(--contrasting-color);
+}
+.work-lis-item{
+	width: calc((100% - 48px) / 3);
 }
 .work-lis-img {
 	display: block;
