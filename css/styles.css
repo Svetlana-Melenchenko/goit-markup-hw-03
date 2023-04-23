@@ -44,7 +44,7 @@ ul {
 	max-width: 100%;
  }
 
-.conteiner {
+.container {
 	width: 1158px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -127,7 +127,7 @@ ul {
 .header-nav {
 	display: flex;
 	align-items: center;
-	gap: 76px;
+	
 }
 .header-nav-list {
 	display: flex;
@@ -143,6 +143,7 @@ ul {
 .header-logo {
 	padding-top: 24px;
 	padding-bottom: 24px;
+	margin-right: 76px;
 }
 .header-logo,
 .footer-logo {
