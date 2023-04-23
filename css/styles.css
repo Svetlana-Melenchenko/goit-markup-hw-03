@@ -25,6 +25,37 @@ body {
 	background-color: var(--bg-main-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/* img {
+	display: block;
+	max-width: 100%;
+} */
+
+.conteiner{
+	width: 1158px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section{
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
 .visually-hidden {
 	position: absolute;
 	white-space: nowrap;
@@ -45,8 +76,6 @@ body {
 	letter-spacing: 0.02em;
 	text-transform: capitalize;
 	color: var(--secondary-color);
-		background-color: var(--lighting-color);
-	
 }
 /* ------h3 */
 .subtitle {
@@ -82,16 +111,37 @@ body {
 	line-height: 1.5;	
 	letter-spacing: 0.02em;
 }
-.list {
-	list-style: none;
-}
+
 .link {
 	text-decoration: none;
-	color:inherit;
+
 }
 /*----- header -----*/
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #E7E9FC;
+}
+.header-nav{
+	display: flex;
+	align-items: center; 
+	gap: 76px;
+}
+.header-nav-list{
+	display: flex;
+	gap: 40px;
+}
+.header-list{
+	display: flex;
+	gap: 40px;
+}
 .header-contact{
 	font-style: normal;
+}
+.header-logo{
+	padding-top:24px;
+	padding-bottom: 24px;
 }
 .header-logo,
 .footer-logo {
@@ -107,8 +157,10 @@ body {
 .header-logo-accent{
 	color: var(--secondary-color);
 }
-
 .header-nav-link {
+	display: inline-block;
+	padding-top:24px;
+	padding-bottom: 24px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.5;
@@ -122,25 +174,37 @@ body {
 	color: var(--bg-hover-btn);
 }
 .header-list-link {
+	padding-top:24px;
+	padding-bottom: 24px;
 	color: var(--main-color);
 	font-style: normal;
 }
 /*------ footer------*/
 .footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-color: var(--secondary-color);
 }
 .footer-logo-accent {
 	color: var(--lighting-color);
+	
 }
 
 .footer-text {
+	margin-top: 16px;
 	color: var(--lighting-color);
-	
+	max-width: 264px;
 }
 /*------ main------*/
 /*----- hero -----*/
 .hero {
+	display: flex;
+	flex-direction: column;
+	gap:48px ;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--secondary-color);
+	min-height: 600px;
 }
 .hero-title {
 	font-weight: 700;
@@ -155,42 +219,118 @@ body {
 	background-color: var(--bg-hover-btn);
 }
 /*------ about------*/
-
+.about-list {
+	display: flex;
+	gap: 24px;
+}
+.about-list-title {
+	margin-bottom: 8px;
+}
 /*------ work------*/
 .work{
-	background-color: var(--lighting-color);
-}
-.work-list{
-	background-color:var(--contrasting-color);
+	padding-top:0;
 }
 .work-title{
+	margin-bottom: 72px;
 	text-align: center;
 }
-
+.work-list{
+	display: flex;
+	gap: 24px;
+	background-color:var(--contrasting-color);
+}
+.work-lis-img{
+	display: block;
+}
 /*------ team------*/
 .team{
 	background-color: var(--lighting-color);
 }
+.team-title{
+	text-align: center;
+	margin-bottom: 72px;
+}
+.team-list{
+	display: flex;
+	gap: 24px;
+}
 .team-list-item{
 	background-color:var(--contrasting-color);
+	background: #FFFFFF;
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+	border-radius: 0px 0px 4px 4px;
+
 }
-.team-title{
+.team-list-item:hover{
+	order: 1;
+}
+.tiam-content{
+	padding: 32px 16px;
+}
+.team-list-title{
+margin-bottom: 8px;
+}
+.team-list-title,
+.team-list-text{
 	text-align: center;
 }
 
 /*------ portfolio------*/
+.portfl{
+	padding-top: 96px;
+}
+.portfl-menu{
+	display: flex;
+	justify-content: center;
+	gap: 24px;
+
+}
 .portfl-btn {
+	padding: 12px 24px;
 	color:var(--accent-color);
 	background-color:var(--lighting-color);
 	cursor: pointer;
+	border: 1px solid var(--bg-accent-color);
+	border-radius: 4px;
 }
 .portfl-btn:hover,
 .portfl-btn:focus{
 	color:var(--contrasting-color);
-	background-color: var(--bg-hover-btn) ;
+	background-color: var(--bg-hover-btn);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+.portfl-list {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.portfl-list-item {
+	flex-basis: calc((100% - 2 * 24px) / 3); 
+}
+.link {
+}
+.portfl-list-img {
+}
+.portfl-tetle {
+}
+.subtitle {
+}
+.portfl-link-text {
+}
+.text {
+}
+
+
+
+
+	
+
 
 
 .portfl-link-text {
 	color: #434455;
+	
 }
+
+
