@@ -195,7 +195,7 @@ ul {
 }
 
 .footer-text {
-	max-width: 264px
+	max-width: 264px;
 	color: var(--lighting-color);
 }
 /*------ main------*/
@@ -297,6 +297,7 @@ ul {
 /*------ portfolio------*/
 .portfl {
 	padding-top: 96px;
+	padding-bottom: 120px;
 }
 .portfl-menu {
 	display: flex;
@@ -316,23 +317,25 @@ ul {
 .portfl-btn:focus {
 	color: var(--contrasting-color);
 	background-color: var(--bg-hover-btn);
+	border: 1px solid transparent;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfl-list {
 	display: flex;
 	flex-wrap: wrap;
-	row-gap: 48px;
-	column-gap: 16px;
+	column-gap: 24px;
 }
-.portfl-list-img {
-	display: block;
+.portfl-list-item{
+	width: calc((100% - 48px) / 3);
 }
 .portfl-content {
 	padding: 32px 16px;
 	border: 1px solid var(--bg-accent-color);
 	border-top: none;
 }
+.portfl-tetle{
+	margin-bottom: 8px;
+}
 .portfl-link-text {
 	color: #434455;
-	margin-top: 8px;
 }
