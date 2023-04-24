@@ -190,12 +190,13 @@ ul {
 }
 .footer-logo-accent {
 	color: var(--lighting-color);
+	display: inline-block;
+	margin-bottom: 16px;
 }
 
 .footer-text {
-	margin-top: 16px;
+	max-width: 264px
 	color: var(--lighting-color);
-	max-width: 264px;
 }
 /*------ main------*/
 /*----- hero -----*/
