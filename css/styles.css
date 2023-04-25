@@ -95,7 +95,6 @@ img {
 /* ------button */
 .btn {
 	border: none;
-
 	color: var(--contrasting-color);
 	font-weight: 500;
 	font-size: 16px;
@@ -213,6 +212,7 @@ img {
 	line-height: 1.07;
 	letter-spacing: 0.02em;
 	text-align: center;
+	margin-bottom: 48px;
 }
 .hero-button {
 	display: block;
